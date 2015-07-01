@@ -18,6 +18,7 @@ RUN gem install sass --version=3.2.14 --no-rdoc --no-ri
 RUN gem install compass --version=0.12.2 --no-rdoc --no-ri
 
 RUN make
+RUN make public-production
 
 ENTRYPOINT ["npm"]
 CMD ["start"]
