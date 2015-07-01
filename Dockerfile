@@ -20,5 +20,7 @@ RUN gem install compass --version=0.12.2 --no-rdoc --no-ri
 RUN make
 RUN make public-production
 
+EXPOSE 3010
+
 ENTRYPOINT ["npm"]
 CMD ["start"]
